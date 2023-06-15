@@ -1,0 +1,43 @@
+
+
+.App {
+  text-align: center;
+  width: 100% ;
+}
+
+.welcome-section {
+  background-color: #f5f5f5; /* Color de fondo de la sección de bienvenida */
+  padding: 50px 0;
+  color: #333; /* Color del texto en la sección de bienvenida */
+
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ 
+}
+.perfil{
+  width: 20rem;
+}
+.about-section {
+  background-color: #333; /* Color de fondo de la sección "About Me" */
+  padding: 50px 0;
+  color:  #f5f5f5; /* Color del texto en la sección "About Me" */
+}
+
+.skills-section {
+  background-color: #fff; /* Color de fondo de la sección de skills */
+  padding: 50px 0;
+}
+
+
+
+.projects-section {
+  background-color: #fff; /* Color de fondo de la sección de proyectos */
+  padding: 50px 0;
+}
+
+.contact-section {
+  background-color: #f5f5f5; /* Color de fondo de la sección de contacto */
+  padding: 50px 0;
+  color: #333; /* Color del texto en la sección de contacto */
+}
