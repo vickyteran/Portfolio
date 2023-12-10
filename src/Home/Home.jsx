@@ -2,8 +2,13 @@ import React from 'react';
 import "./HomeStyle.css";
 import Card from 'react-bootstrap/Card';
 import { Container, Button} from "react-bootstrap";
+import { SiPostman } from "react-icons/si";
+import Contactform from '../components/Contactform';
+import Projects from '../components/Projects';
+
 
 const Home = () => {
+  const postman = SiPostman;
     const icons = [
         {
           name: "HTML",
@@ -28,6 +33,14 @@ const Home = () => {
         {
           name: "GITHUB",
           img: "../public/github.png",
+        },
+        {
+          name: "MONGO DB",
+          img: "../public/mongodb.png"
+        },
+        {
+          name: "POSTMAN",
+          img: "../public/postman.jpg"
         },
       ];
   return (
@@ -79,13 +92,14 @@ const Home = () => {
       <section className="projects-section">
         <Container>
           <h2>Projects</h2>
-          {/* Agrega aquí tus proyectos en forma de cards */}
+          <Projects/>
         </Container>
       </section>
 
       <section className="contact-section">
         <Container>
           <h2>Contact</h2>
+          <Contactform/>
           {/* Agrega aquí la sección de contacto vía email y WhatsApp */}
         </Container>
       </section>

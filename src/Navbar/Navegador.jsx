@@ -9,15 +9,14 @@ const Navegador = () => {
     <Container>
       <Navbar.Brand href="#home">VMT</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
-        <Nav>
-          <Nav.Link href="#deets">More deets</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
+      <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+       
+        <Nav  >
+        <Nav.Link >About me</Nav.Link>
+          <Nav.Link >Skills</Nav.Link>
+          <Nav.Link >Projects</Nav.Link>
+          <Nav.Link eventKey={2} >
+            Contact me
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
