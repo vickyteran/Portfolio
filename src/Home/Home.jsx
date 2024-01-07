@@ -62,7 +62,7 @@ const Home = () => {
           <h2>About Me</h2>
           <p>
             Hello, I'm Victoria Teran, a passionate developer who ventured into
-            the world of technology in early last year. With a background in
+            the world of technology in early 2022. With a background in
             architecture, I discovered my love for programming and have been
             eager to learn ever since. Combining my creativity and
             problem-solving skills, I am excited to continue growing as a

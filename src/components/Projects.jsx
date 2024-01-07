@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './StyleProjects.css';
 
 function Projects() {
 
@@ -7,19 +8,25 @@ function Projects() {
         {
             name: 'MOVIE SEARCH WEBSITE',
         description: 'For the second module project, we developed a JavaScript-powered movie website. Users can browse and watch movies online.',
-        tecnologies: 'HTML, CSS, JAVASCRIPT'
+        tecnologies: 'HTML, CSS, JAVASCRIPT, GITHUB'
     },
     {
-        name: 'name',
-    description: 'hh'
+        name: 'GYM WEBSITE',
+    description: 'We developed a gym management system as a group project using React.js for the frontend and Node.js for the backend. Clients can access an online store, while administrators can maintain membership fee records.',
+    tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB'
+},
+{
+    name: 'FARMATURNO',
+description: 'We developed a gym management system as a group project using React.js for the frontend and Node.js for the backend. Clients can access an online store, while administrators can maintain membership fee records.',
+tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB'
 }
 
     ]
   return (
-    <div>
+    <div className='projects'>
 {projects.map((project) => (
- <Card style={{ width: '18rem' }}>
- <Card.Img variant="top" src="holder.js/100px180" />
+ <Card style={{ width: '18rem' }} className='project'>
+ 
  <Card.Body>
    <Card.Title>{project.name}</Card.Title>
    <Card.Text>
@@ -28,7 +35,7 @@ function Projects() {
    <Card.Text>
     {project.tecnologies}
    </Card.Text>
-   <Button variant="primary"> Explore</Button>
+   <Button variant="light"> Explore</Button>
  </Card.Body>
 </Card>
 ))}
