@@ -40,7 +40,7 @@ const Home = () => {
         },
         {
           name: "POSTMAN",
-          img: "../public/postman.jpg"
+          img: "../public/postman.png"
         },
       ];
   return (
