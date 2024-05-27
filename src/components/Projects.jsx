@@ -1,25 +1,53 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './StyleProjects.css';
 
-function Projects() {
+const Projects = () => {
+  return (
+    // <Container>
+    // <Carousel interval={null}>
+    //   <Carousel.Item>
+        <div className="d-flex justify-cntent-between">
+          <CardComponent />
+          
+        </div>
+  //     </Carousel.Item>
+     
+  //     {/* Agrega más Carousel.Items según sea necesario */}
+  //   </Carousel>
+  // </Container>
+  );
+};
+
+const CardComponent = () => {
 
     const projects = [
         {
-            name: 'MOVIE SEARCH WEBSITE',
-        description: 'For the second module project, we developed a JavaScript-powered movie website. Users can browse and watch movies online.',
-        tecnologies: 'HTML, CSS, JAVASCRIPT, GITHUB'
+            name: 'MOVIES 5i',
+        description: 'JavaScript-powered movie website where users can browse and watch movies online.',
+        tecnologies: 'HTML, CSS, JAVASCRIPT, GITHUB',
+        link: 'https://movies-5i.netlify.app'
     },
     {
         name: 'GYM WEBSITE',
-    description: 'We developed a gym management system as a group project using React.js for the frontend and Node.js for the backend. Clients can access an online store, while administrators can maintain membership fee records.',
-    tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB'
+    description: 'Gym management system where clients can create an account, log in and access an online store, while administrators can maintain membership fee records.',
+    tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB',
+    link: 'https://gimnasio.vercel.app/'
 },
 {
     name: 'FARMATURNO',
-description: 'We developed a gym management system as a group project using React.js for the frontend and Node.js for the backend. Clients can access an online store, while administrators can maintain membership fee records.',
-tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB'
-}
+description: 'Collaborative development of the "FarmaTurno" web application designed to streamline pharmacy queues in Colombia.',
+tecnologies: 'REACTJS, NODEJS, EXPRESS JS, MONGODB, REDUX TOOLKIT, GITHUB',
+link: 'https://c11-02-m-mern-farmaturno.vercel.app/'
+},
+{
+  name: 'WEDDING INVITATION',
+description: 'Wedding invitation where guests can RSVP and access relevant information.',
+tecnologies: 'REACTJS, TAILWIND, GITHUB',
+link: 'https://wed-practice.vercel.app/'
+},
+
 
     ]
   return (
@@ -35,7 +63,7 @@ tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB'
    <Card.Text>
     {project.tecnologies}
    </Card.Text>
-   <Button variant="light"> Explore</Button>
+   <Button href={project.link} target='_blank' variant="light"> Explore</Button>
  </Card.Body>
 </Card>
 ))}
@@ -44,5 +72,7 @@ tecnologies: 'REACTJS, NODEJS, MONGODB, POSTMAN, GITHUB'
     </div>
   );
 }
+
+
 
 export default Projects;

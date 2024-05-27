@@ -11,6 +11,7 @@
     height: 100vh;
   
     display: flex;
+    
     justify-content: center;
    align-items: center;
    
@@ -57,4 +58,19 @@
   .icon{
     width: 8rem;
     border: #fff;
+  }
+
+  @media (max-width:600px) {
+    .welcome-section {
+     
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+     
+    }
+
+    .perfil{
+      margin-top: 4rem;
+    }
+    
   }

@@ -47,31 +47,26 @@ const Home = () => {
     <div className="App">
     <header className="welcome-section">
         <Container>
-          <h1>Hello</h1>
-          <h2>I'm Victoria Teran</h2>
+          <h1>Victoria Terán </h1>
+          
           <p>Full Stack developer & Arquitect</p>
-          <Button variant="dark">Contact me</Button>
+          <Button href='#contactMe' variant="dark">Contact me</Button>
         </Container>
         <Container>
           <img src="../public/yo.png" className="perfil" />
         </Container>
       </header>
 
-      <section className="about-section">
-        <Container>
+      <section id='aboutMe' className="about-section">
+        <Container >
           <h2>About Me</h2>
           <p>
-            Hello, I'm Victoria Teran, a passionate developer who ventured into
-            the world of technology in early 2022. With a background in
-            architecture, I discovered my love for programming and have been
-            eager to learn ever since. Combining my creativity and
-            problem-solving skills, I am excited to continue growing as a
-            developer and contribute to innovative projects.
+          Hello, I'm Victoria Teran, a passionate developer who delved into the world of technology in early 2022. With a background in architecture, I discovered my love for programming and have been eager to learn ever since. Having spent a year living abroad, I honed my English skills and gained a valuable international perspective. Currently seeking my first role as a developer, I'm excited to contribute to innovative projects with my creative and problem-solving skills.
           </p>
-          <Button variant="light">View CV</Button>
+          <Button variant="light">View Resume</Button>
         </Container>
       </section>
-      <section className="skills-section">
+      <section id='skills' className="skills-section">
         <Container>
           <h2>Skills</h2>
           </Container>
@@ -89,14 +84,14 @@ const Home = () => {
           </div>
         
       </section>
-      <section className="projects-section">
+      <section id='projects' className="projects-section">
         <Container>
           <h2>Projects</h2>
           <Projects/>
         </Container>
       </section>
 
-      <section className="contact-section">
+      <section id='contactMe' className="contact-section">
         <Container>
           <h2>Contact</h2>
           <Contactform/>
