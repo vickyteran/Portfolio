@@ -73,7 +73,7 @@ const Home = () => {
           <div className='iconos'>
           {icons.map((icon) => (
             <Card className='icon'>
-      <Card.Img variant="top" src= {icon.img} alt='logo'/>
+      <Card.Img variant="top" src= {icon.img} type='.png' alt='logo'/>
       <Card.Body>
         <Card.Title>{icon.name}</Card.Title>
       </Card.Body>
