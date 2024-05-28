@@ -12,7 +12,7 @@ const Home = () => {
     const icons = [
         {
           name: "HTML",
-          img: ".././portfolio/public/html.png",
+          img: "../public/html.png",
         },
         {
           name: "CSS",
@@ -73,7 +73,7 @@ const Home = () => {
           <div className='iconos'>
           {icons.map((icon) => (
             <Card className='icon'>
-      <Card.Img variant="top" src= {icon.img} />
+      <Card.Img variant="top" src= {icon.img} alt='logo'/>
       <Card.Body>
         <Card.Title>{icon.name}</Card.Title>
       </Card.Body>
