@@ -12,7 +12,7 @@ const Home = () => {
     const icons = [
         {
           name: "HTML",
-          img: "../public/html.png",
+          img: "/html.png",
         },
         {
           name: "CSS",
