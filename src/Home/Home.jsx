@@ -16,31 +16,31 @@ const Home = () => {
         },
         {
           name: "CSS",
-          img: "../public/css.png",
+          img: "/css.png",
         },
         {
           name: "JAVASCRIPT",
-          img: "../public/js.png",
+          img: "/js.png",
         },
         {
           name: "REACT",
-          img: "../public/react.png",
+          img: "/react.png",
         },
         {
           name: "NODEJS",
-          img: "../public/nodejs.png",
+          img: "/nodejs.png",
         },
         {
           name: "GITHUB",
-          img: "../public/github.png",
+          img: "/github.png",
         },
         {
           name: "MONGO DB",
-          img: "../public/mongodb.png"
+          img: "/mongodb.png"
         },
         {
           name: "POSTMAN",
-          img: "../public/postman.png"
+          img: "/postman.png"
         },
       ];
   return (
@@ -53,7 +53,7 @@ const Home = () => {
           <Button href='#contactMe' variant="dark">Contact me</Button>
         </Container>
         <Container>
-          <img src="../public/yo.png" className="perfil" />
+          <img src="/yo.png" className="perfil" />
         </Container>
       </header>
 
