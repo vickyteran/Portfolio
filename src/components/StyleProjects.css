@@ -1,34 +1,48 @@
-.projects{
-    /* padding: 1rem; */
-    margin-top: 2rem;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    /* justify-content: space-around; */
-    /* align-content: space-around; */
-    align-items: center;
-
-    
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
 }
-  
 
-  .project{
-    color: white;
-    background-color: rgba(255, 253, 253, 0.057); /* Ajusta el último valor (0.7) para cambiar la opacidad */
-  padding: 30px;
-  height: 27rem;
-  font-size: 0.9rem;
-  
-  }
+/* .carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
-  @media (max-width:600px) {
-   
-    .projects{
-      
-      flex-wrap: wrap;
-      
-  
-      
+.project-card {
+  min-width: calc(100% / 3);
+  width: 25rem;
+  height: 20rem;
+  padding: 1rem;
+  background-color: var(--fondo);
+  color: white;
+  border: var(--color) solid 2px;
+  border-radius: 15px;
+  margin: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    min-width: 100%; /* Mostrar 1 tarjeta a la vez en pantallas pequeñas */
   }
-    
-  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 2rem;
+  color: white;
+  z-index: 2;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}

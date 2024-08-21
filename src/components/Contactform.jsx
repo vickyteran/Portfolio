@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
+import { Container, Button } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
-import { Button} from "react-bootstrap";
+import './StyleContactform.css';
 
 function Contactform() {
 
@@ -58,26 +59,26 @@ function Contactform() {
 
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} >
          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="name" name="name" value={formData.name}
+        <Form.Control className='input' type="name" name="name" value={formData.name}
           onChange={handleChange}
           required  />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" name="email" value={formData.email}
+        <Form.Control className='input' type="email" name="email" value={formData.email}
           onChange={handleChange}
           required/>
       </Form.Group>
       <Form.Group className="mb-3" >
         <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" name="message" value={formData.message}
+        <Form.Control className='input' as="textarea" name="message" value={formData.message}
           onChange={handleChange}
           required rows={3} />
       </Form.Group>
-      <Button variant="dark" type="submit" >
+      <Button  type="submit"  target='_blank' className='button' >
         Send
       </Button>
     </Form>

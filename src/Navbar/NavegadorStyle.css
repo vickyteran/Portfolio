@@ -1,0 +1,27 @@
+.nav{
+    background-color: var(--fondo);
+    
+}
+
+.nav-brand{
+    font-size:x-large;
+    font-weight: 600;
+}
+.nav-link{
+    color: var(--color);
+}
+
+.nav-link:hover{
+ color:var(--violeta)
+}
+
+.nav-link:active{
+    color:var(--violeta)
+   }
+.navbar-toggle{
+    background-color: var(--color);
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+}

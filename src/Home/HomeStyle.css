@@ -1,72 +1,82 @@
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
 .App {
     text-align: center;
-    width: 100% ;
+   
   }
+.App > section {
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}
   
 
 .welcome-section {
-    background-color: #f5f5f5; /* Color de fondo de la sección de bienvenida */
-    padding: 50px 0;
-    color: #333; /* Color del texto en la sección de bienvenida */
-    height: 100vh;
-  
-    display: flex;
     
+    padding: 50px 0;
+    height: 100vh;
+    display: flex;
     justify-content: center;
    align-items: center;
    
   }
+
+  .typewriter {
+    overflow: hidden;
+    border-right: .15em solid var(--color); /* Color del cursor */
+    /* white-space: nowrap; */
+    /* margin: 0 auto; */
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink .75s step-end infinite;
+  }
+
   .perfil{
-    width: 20rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: fill; /* Mantiene la proporción de la imagen y la ajusta dentro del contenedor */
+   filter: drop-shadow(0px 0px 10px var(--color)); 
   }
-  .about-section {
-    background-color: #333; /* Color de fondo de la sección "About Me" */
-    padding: 50px 0;
-    color:  #f5f5f5; /* Color del texto en la sección "About Me" */
-  }
-  
-  .skills-section {
-    background-color: #fff; /* Color de fondo de la sección de skills */
-    padding: 50px 0;
-   
+  .perfil:hover{
 
+   filter: drop-shadow(0px 0px 15px var(--color));
+      
   }
-  
-  
-  
-  .projects-section {
-    background-color: #333; /* Color de fondo de la sección de proyectos */
-    padding: 50px 0;
-    color: #fff;
-  }
-  
-  .contact-section {
-    background-color:#f5f5f5; /* Color de fondo de la sección de contacto */
-    padding: 50px 0;
-   
-  }
-  .iconos{
-    padding: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-    align-content: space-around;
-    align-items: center;
 
+  
+
+  .about-parrafo{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-line;
   }
-  .icon{
-    width: 8rem;
-    border: #fff;
-  }
+ 
+  
+  
 
   @media (max-width:600px) {
+
+
+    .App > section {
+      height: 100%;
+      max-width: 100vw;
+      margin-top: 2rem;
+        
+    }   
     .welcome-section {
-     
       flex-direction: column;
       flex-wrap: wrap;
-      
-     
+      max-width: 100vw;
     }
 
     .perfil{
