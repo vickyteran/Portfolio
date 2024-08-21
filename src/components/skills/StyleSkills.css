@@ -79,9 +79,18 @@ font-size: small;
   }
 
   @media (max-width:600px) {
+    .iconos{
+      padding: .5rem;
+      gap: .5rem;
+  
+    }
     .icon {
       width: 8rem;
-      height: 10rem;
-      
+      height: 9.2rem;
+      padding: 0.2rem;
     }
+    icon-img{
+      height: 5rem;
+    }
+  
   }
