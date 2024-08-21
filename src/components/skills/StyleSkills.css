@@ -77,3 +77,11 @@ font-size: small;
   .star.filled {
     color: gold; /* Color para estrellas llenas */
   }
+
+  @media (max-width:600px) {
+    .icon {
+      width: 8rem;
+      height: 10rem;
+      
+    }
+  }

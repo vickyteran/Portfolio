@@ -12,14 +12,14 @@ const Home = () => {
 
   return (
     <div className="App">
-      <header className="welcome-section">
-        <Container>
+      <header className="welcome-section" id='home'>
+        <Container className='welcome-section-text'>
           <h1 className='typewriter'>
             
        Victoria Teran
            </h1>
 
-          <p>Full Stack Developer & Architect</p>
+          <p >Full Stack Developer & Architect</p>
           <Button href='#contactMe' className='button' variant='ligth' >Contact me</Button>
         </Container>
         <Container >
