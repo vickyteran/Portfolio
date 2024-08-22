@@ -36,7 +36,7 @@ const Home = () => {
 
             After discovering my love for programming, I have eagerly pursued learning and expanding my skill set. I have experience in HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, and have worked on various web projects that have helped me gain proficiency in technologies such as Redux Toolkit, Tailwind, Bootstrap, Express.js, and more. I've collaborated in teams under agile methodologies, using tools like Trello, Git/GitHub, Figma, and Postman. Having spent a year living abroad, I honed my English skills and gained a valuable international perspective.<br />
             
-            I am currently working on a freelance project for Sabio AI Startup, a project for IE University Spain. I am also seeking a front end or full stack developer role to contribute to innovative projects and continue learning and expanding my knowledge.
+            I am currently working as a freelance Frontend Developer, but I’m looking to join a team to consolidate and strengthen my skills in a professional environment. I am open to both solidifying existing technologies and learning new ones.
 
           </p>
           <Button href='/cv.pdf' target='_blank' className='button' variant='ligth'>View Resume</Button>

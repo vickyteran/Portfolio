@@ -6,13 +6,13 @@ const Projects = () => {
   const projects = [
     {
       name: 'WEDDING INVITATION',
-      description: 'Wedding invitation where guests can RSVP and access relevant information.',
+      description: 'Modern solution of  a wedding invitation that streamlines the entire confirmation process and gathers all the information in one place. It is compatible with any device, both mobile and desktop.',
       tecnologies: 'REACTJS, TAILWIND, GITHUB',
       link: 'https://wed-practice.vercel.app/'
     },
     {
       name: 'FARMATURNO',
-      description: 'Collaborative development of the "FarmaTurno" web application designed to streamline pharmacy queues in Colombia.',
+      description: 'Collaborative development. Web application designed to streamline pharmacy queues in Colombia. Users and pharmacys can register, log in, make/offer appointments and administrate them.',
       tecnologies: 'REACTJS, NODEJS, EXPRESS JS, MONGODB, REDUX TOOLKIT, GITHUB',
       link: 'https://c11-02-m-mern-farmaturno.vercel.app/'
     },
@@ -71,7 +71,7 @@ const CardComponent = ({ project }) => {
   return (
     <div className="project-card">
       <h3>{project.name}</h3>
-      <p>{project.description}</p>
+      <p className='project-card-text'>{project.description}</p>
       <p>{project.tecnologies}</p>
       <a href={project.link} target="_blank" rel="noopener noreferrer">Explore</a>
     </div>

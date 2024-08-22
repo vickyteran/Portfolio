@@ -20,6 +20,13 @@
   border-radius: 15px;
   margin: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 600px) {
