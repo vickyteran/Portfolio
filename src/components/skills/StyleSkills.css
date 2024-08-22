@@ -12,7 +12,7 @@
     width: 8rem;
     height: 11rem;
     padding: 0.3rem;
-    perspective: 1000px; /* Da profundidad a la escena para el efecto 3D */
+    
   }
   .icon-img{
     max-width: 70px
