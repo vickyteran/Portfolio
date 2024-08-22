@@ -68,7 +68,7 @@
 
 
     .App > section {
-      max-height: 100vh;
+      /* max-height: 100vh; */
       max-width: 100vw;
       /* margin-top: 4rem; */
         
@@ -80,11 +80,11 @@
       max-width: 100vw;
       gap: 4rem;
     }
-
+/* 
     .skills-section{
       margin-top: 4rem;
-      overflow: hidden;
-    }
+      
+    } */
 
     
     
