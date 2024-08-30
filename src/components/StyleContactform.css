@@ -90,3 +90,13 @@ h5 {
 .input-message {
     height: 15rem;
 }
+
+@media (max-width:600px){
+    .contact{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .contact-form-name{
+        flex-direction: column;
+    }
+}
