@@ -32,9 +32,9 @@ const Home = () => {
           <h2>About Me</h2>
           <p className='about-parrafo'>
             Hello!
-            I am Victoria Teran, an architect turned passionate developer who ventured into the world of technology in early 2022. My background in architecture has equipped me with strong design skills and a solid foundation in problem-solving.<br />
+            I am Victoria Teran, an architect turned passionate developer who ventured into the world of technology in early 2022.. My background in architecture has equipped me with strong design skills and a solid foundation in problem-solving.<br />
 
-            After discovering my love for programming, I have eagerly pursued learning and expanding my skill set. I have experience in HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, and have worked on various web projects that have helped me gain proficiency in technologies such as Redux Toolkit, Tailwind, Bootstrap, Express.js, and more. I've collaborated in teams under agile methodologies, using tools like Trello, Git/GitHub, Figma, and Postman. Having spent a year living abroad, I honed my English skills and gained a valuable international perspective.<br />
+           I have worked on various web projects that have helped me gain proficiency in technologies and collaborated in teams under agile methodologies, using tools like Trello, Jira,  Git/GitHub, Figma, and Postman. Having spent a year living abroad, I honed my English skills and gained a valuable international perspective.<br />
             
             I am currently working as a freelance Frontend Developer, but I’m looking to join a team to consolidate and strengthen my skills in a professional environment. I am open to both solidifying existing technologies and learning new ones.
 
@@ -58,7 +58,7 @@ const Home = () => {
 
       <section id='contactMe' className="contact-section">
         <Container>
-          <h2>Contact</h2>
+          <h2>Contact Me</h2>
           <Contactform />
           {/* Agrega aquí la sección de contacto vía email y WhatsApp */}
         </Container>

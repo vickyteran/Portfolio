@@ -1,15 +1,92 @@
-.input{
+.contact {
+    display: flex;
+    text-align: left;
+    margin-top: 3rem;
+}
+
+h5 {
+    color: var(--color);
+}
+
+.contact-form-name {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-info-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.contact-info-text a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.contact-info-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.contact-info-img img {
+    width: 1.6rem;
+    display: block;
+}
+
+.contact-item:hover .contact-info-text a {
+    color: var(--color);
+    
+}
+.contact-item:hover .contact-info-img{
+    background-color: var(--color);
+}
+
+.input {
     border: var(--color) solid 2px;
     background-color: var(--fondo);
     border-radius: 15px;
     color: var(--color);
-   
+    font-size: small;
 }
 
-.input:focus{
+.input:focus {
     background-color: var(--fondo);
     border: var(--color) solid 2px;
     color: var(--color);
     outline: none;
-    filter: drop-shadow(0px 0px 5px var(--color)); 
+    filter: drop-shadow(0px 0px 5px var(--color));
+}
+
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--fondo) inset;
+    -webkit-text-fill-color: var(--color);
+}
+
+.input-message {
+    height: 15rem;
 }

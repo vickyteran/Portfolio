@@ -47,6 +47,27 @@ const Skills = () => {
           img: "/postman.png",
           experience: 4
         },
+        {
+          name: "REDUX",
+          img: "/redux.png",
+          experience: 3
+        },
+        {
+          name: "TAILWIND",
+          img: "/tailwind.png",
+          experience: 3
+        },
+        {
+          name: "BOOTSTRAP",
+          img: "/bootstrap.png",
+          experience: 3
+        },
+        {
+          name: "AGILE METHODOLOGIES",
+          img: "/agile.png",
+          experience: 4
+        },
+      
       ];
     
   return (
