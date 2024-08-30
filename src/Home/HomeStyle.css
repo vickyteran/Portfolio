@@ -55,11 +55,14 @@
       
   }
 
-  
+  h2:hover{
+color: var(--color);
+  }
 
   .about-parrafo{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     white-space: pre-line;
+    font-size: large;
   }
  
   
@@ -69,7 +72,7 @@
 
     .App {
       
-     padding: 0 2rem;
+     padding: 0 1.5rem;
      
     }
 

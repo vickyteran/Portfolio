@@ -32,7 +32,7 @@ const Home = () => {
           <h2>About Me</h2>
           <p className='about-parrafo'>
             Hello!
-            I am Victoria Teran, an architect turned passionate developer who ventured into the world of technology in early 2022.. My background in architecture has equipped me with strong design skills and a solid foundation in problem-solving.<br />
+            I am Victoria Teran, an architect turned passionate developer who ventured into the world of technology in early 2022. My background in architecture has equipped me with strong design skills and a solid foundation in problem-solving.<br />
 
            I have worked on various web projects that have helped me gain proficiency in technologies and collaborated in teams under agile methodologies, using tools like Trello, Jira,  Git/GitHub, Figma, and Postman. Having spent a year living abroad, I honed my English skills and gained a valuable international perspective.<br />
             

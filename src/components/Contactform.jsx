@@ -59,7 +59,7 @@ function Contactform() {
                 <img src={contact.icon} alt={`${contact.name} Icon`} />
               </div>
               <div className='contact-info-text'>
-                <a href={contact.path}>{contact.name}</a>
+                <a href={contact.path} target='blank'>{contact.name}</a>
               </div>
             </div>
           ))}
