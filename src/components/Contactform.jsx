@@ -19,7 +19,6 @@ function Contactform() {
     email: '',
     message: ''
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -27,6 +26,7 @@ function Contactform() {
       [name]: value
     });
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -65,7 +65,7 @@ function Contactform() {
           ))}
         </div>
       </div>
-      <Form onSubmit={handleSubmit} className='contact-form'>
+       <Form onSubmit={handleSubmit} className='contact-form' >
         <div className='contact-form-name'>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Name</Form.Label>
@@ -81,13 +81,13 @@ function Contactform() {
           </Form.Group>
         </div>
         <div>
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-3" >
             <Form.Label>Message</Form.Label>
             <Form.Control className='input input-message' as="textarea" name="message" value={formData.message}
               onChange={handleChange}
               required rows={3} />
           </Form.Group>
-          <Button type="submit" target='_blank' className='button'  variant='ligth'>
+          <Button type="submit" target='_blank' className='button' >
             Send
           </Button>
         </div>

@@ -11,8 +11,8 @@
 
 .project-card {
   min-width: calc(100% / 3);
-  width: 25rem;
-  height: 22rem;
+  width: 30rem;
+  min-height: 22rem;
   padding: 1rem;
   background-color: var(--fondo);
   color: white;
@@ -27,6 +27,16 @@
 
 .project-card-text{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-card-links{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card-links>a{
+  width: auto;
 }
 
 @media (max-width: 600px) {
